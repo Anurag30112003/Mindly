@@ -1,0 +1,79 @@
+body , html{
+  padding: 0px;
+  margin: 0px;
+}
+nav{
+  width: 100%;
+  background-color: #C4C4C4;
+  overflow: hidden;
+}
+ul{
+  padding: 0;
+  margin: 0 0 0 150px;
+  list-style: none;
+}
+li{
+  float: left;
+  
+
+}
+
+li :hover{
+  background-color: #68e1fd;
+}
+.logo img{
+  position:absolute;
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-right: 10px;
+  height: 80px;
+}
+.first{
+  margin-left: 250px;
+}
+nav a{
+  
+  width: 200px;
+  display: inline-block ;
+  padding: 25px 10px;
+  text-decoration: none;
+  color: #575757;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  
+}
+.logobig img{
+   width: 30%; 
+  display: block;
+  margin-left: 18vw;
+
+}
+.leftnav{
+  float: right;
+}
+i.fas,
+    i.fab {
+      font-size: 19px;
+    }
+.signupim img{
+  width: 40%;
+}
+.signupim{
+  display: inline-flex;
+}
+.signupim h1{
+  font-family: 'Ubuntu', sans-serif;
+  padding: 30px 30px;
+  margin-top: 5%;
+  /* margin-left:auto; */
+  font-size: 100px;
+  
+}
+form{
+  margin-left: 20%;
+}
+a{
+  text-decoration: none;
+}
+
