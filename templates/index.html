@@ -5,109 +5,192 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400&family=Kanit:wght@200&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/style.css">
-    <title>Adventure Together</title>
-</head>
-
-<body>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Mindly</title>
     <style>
-        .leftimg {
-            position: absolute;
-            left: 0%;
-            top: 50%;
-            /* right: auto; */
-            bottom: 30%;
-            z-index: 15;
+        body,
+        html {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        nav {
             width: 100%;
-            height: 100%;
-            background-repeat: no-repeat;
-            background-image: url(static/img/trip.png);
-            background-position: 0px 0px;
-            background-size: auto;
+            background-color: #BAE8E8;
+            overflow: hidden;
         }
 
-        .headingbig {
-            text-align: center;
-            background-image: linear-gradient(to right, rgb(119, 212, 224), rgb(87, 204, 240), rgb(31, 188, 194), rgb(7, 158, 151), rgb(24, 111, 211));
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            margin-top: 5%;
-            font-size: 52px;
-            font-family: 'Roboto', sans-serif;
+        ul {
+            padding: 0;
+            margin: 0 0 0 150px;
+            list-style: none;
         }
 
-        .about1 {
+        li {
+            float: right;
+
+
+
+
+        }
+
+        li :hover {
+            background-color: #2C698D;
+            color: #e3f6f5;
+        }
+
+        .logo img {
+            position: absolute;
+            margin-top: 0px;
+            margin-left: 5px;
+            margin-right: 10px;
+            height: 100px;
+        }
+
+        .first {
+            margin-left: 250px;
+        }
+
+        nav a {
+
+            width: 200px;
+            display: inline-block;
+            padding: 25px 10px;
+            text-decoration: none;
+            color: #2C698D;
             text-align: center;
-            margin-top: 1%;
-            font-family: 'Inter', sans-serif;
-            color: #646977;
+            font-family: 'Advent Pro', sans-serif;
+            font-size: 23px;
+            transition: color 2s;
+            transition: background-color 2s;
+            /* font-weight: 1000; */
+
+        }
+
+        .heading1 {
+            text-align: center;
+            padding-top: 6%;
+            font-size: 50px;
+            color: #2C698D;
+            font-family: 'Alegreya Sans SC', sans-serif;
+            /* font-weight: 1000; */
+        }
+
+        .subheading1 {
+            text-align: center;
+            font-family: 'Advent Pro', sans-serif;
+            color: #272643;
             font-size: 30px;
         }
 
-        .btn{
-            align-items: center;
-            background-color: #68e1fd;
-            margin-left: 46%;
-            font-size: 25px;
-            padding: 10px 20px;
-            font-family: 'Ubuntu', sans-serif;
-            margin-top: 3%;
+        .button1 {
+            text-align: center;
+            margin-top: 5%;
         }
-        .btn :hover{
-            background-color: white;
-            color: #68e1fd;
+
+        .headbutton {
+            border: none;
+            padding: 12px 30px;
+            background-color: #BAE8E8;
+            color: #272643;
+            font-size: 20px;
+            font-family: 'Alegreya Sans SC', sans-serif;
+            transition: color 2s;
+            transition: background-color 2s;
+        }
+
+        .headbutton:hover {
+            background-color: #2C698D;
+            color: #e3f6f5;
+
+        }
+
+        @keyframes midani {
+            0% {
+                background-color: #ffffff;
+            }
+
+            100% {
+                background-color: #2C698D;
+            }
+        }
+
+        .mid {
+            margin-top: 20%;
+            background-color: #2C698D;
+            color: #ffffff;
+            animation-name: midani;
+            animation-duration: 4s;
+            animation-direction: alternate;
+
+        }
+
+        .heading2 {
+            padding-top: 5%;
+            padding-bottom: 10%;
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Alegreya Sans SC', sans-serif;
+            color: #e3f6f5;
+
+        }
+
+        .footer1 {
+            text-align: center;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            font-family: 'Advent Pro', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            color: #272643;
+            text-decoration: none;
         }
     </style>
-    <div class="logo"><a href="/"><img src="static/img/logo.svg" alt=""></a></div>
+</head>
+
+<body>
+    <div class="logo"><a href="/"><img src="static/img/MINDLYlogo1.png" alt=""></a></div>
     <nav>
         <ul>
 
             <li>
-                <a href="#" class="first" style="text-decoration:none;"><i class="fa fa-info-circle"
-                        aria-hidden="true"></i>
-                    About</a>
 
             </li>
             <li class="leftnav">
-                <a href="signup " style="text-decoration:none;"> <i class="fas fa-user-plus "></i> SignUp</a>
-                <a href="login" style="text-decoration:none;">Login <i class="fas fa-lock"></i></a>
+                <a href="signup " style="text-decoration:none;">SIGN-UP</a>
+                <a href="login" style="text-decoration:none;">LOGIN </i></a>
             </li>
         </ul>
     </nav>
 </body>
-<section>
-    <!-- <div class="mount1" style="background-image: url('static/img/mountain1.png'); min-height: 100%;">
-        Hello world
-    </div> -->
-    <div class="leftimg"></div>
-    <h1 class="headingbig">Why to travel Solo?,when you can make new friends!</h1>
-    <h2 class="about1"> A new web app to make new friends and travel to exciting places.</h2>
-    <div class="button1"> </div> <button type="button" class="btn">Primary</button>
-</section>
-<section></section>
-
-
-
-
-
-
-
-<footer class="page-footer font-small blue">
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3" style="background-color: #C4C4C4; color: #575757;">Made with <i
-            class="fas fa-heart" style="color: red;"></i> <br>© 2021 Copyright:
-        <a href="https://anuragdev.netlify.app/" style="color:#575757 ;"> Anurag</a>
+<div class="heading1">
+    MENTAL HEALTH IS IMPORTANT
+</div>
+<div class="subheading1">
+    Mindly provides best way to remove your <br>
+    stress and provide a better mental health.
+</div>
+<div class="button1">
+    <a href="/login"><button type="button" class="headbutton"> TRY NOW </button></a>
+</div>
+<section class="mid">
+    <div class="heading2">
+        KEY FEATURES
     </div>
-    <!-- Copyright -->
-</footer>
+</section>
+<section class="footer">
+    <footer class="footer1">
+        Made with <i class="fas fa-heart" style="color: red;"></i> <br>
+        Copyright © 2021 | <a href="https://anuragdev.netlify.app/" style="color: #272643; text-decoration: none;"> Anurag </a>
+    </footer>
+</section>
 
 </html>
