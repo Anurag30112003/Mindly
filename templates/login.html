@@ -12,71 +12,129 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Adventure Together</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400&family=Kanit:wght@200&display=swap"
+        rel="stylesheet">
+    <title>Mindly</title>
+    <style>
+        body,
+        html {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #BAE8E8;
+            overflow: hidden;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0 0 0 150px;
+            list-style: none;
+        }
+
+        li {
+            float: right;
+
+
+
+
+        }
+
+        li :hover {
+            background-color: #2C698D;
+            color: #e3f6f5;
+        }
+
+        .logo img {
+            position: absolute;
+            margin-top: 0px;
+            margin-left: 5px;
+            margin-right: 10px;
+            height: 100px;
+        }
+
+        .first {
+            margin-left: 250px;
+        }
+
+        nav a {
+
+            width: 200px;
+            display: inline-block;
+            padding: 25px 10px;
+            text-decoration: none;
+            color: #2C698D;
+            text-align: center;
+            font-family: 'Advent Pro', sans-serif;
+            font-size: 23px;
+            transition: color 1s;
+            transition: background-color 1s;
+            /* font-weight: 1000; */
+
+        }
+
+        .loginhead {
+            text-align: center;
+            margin-top: 5%;
+            margin-bottom: 2%;
+            font-family: 'Alegreya Sans SC', sans-serif;
+            color: #2C698D;
+            font-size: 50px;
+        }
+
+        ::-webkit-input-placeholder {
+            text-align: center;
+            font-family: 'Advent Pro', sans-serif;
+            color: #575757;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        :-moz-placeholder {
+            text-align: center;
+            font-family: 'Advent Pro', sans-serif;
+            color: #575757;
+            font-size: 25px;
+            font-weight: 400;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="logo"><a href="/"><img src="static/img/logo.svg" alt=""></a></div>
+    <div class="logo"><a href="/"><img src="static/img/MINDLYlogo1.png" alt=""></a></div>
     <nav>
         <ul>
 
-            <li>
-                <a href="#" class="first" style="text-decoration:none;"><i class="fa fa-info-circle"
-                        aria-hidden="true"></i>
-                    About</a>
-
-            </li>
             <li class="leftnav">
-                <a href="signup " style="text-decoration:none;"> <i class="fas fa-user-plus "></i> SignUp</a>
-                <a href="login" style="text-decoration:none;">Login <i class="fas fa-lock"></i></a>
+                <a href="signup " style="text-decoration:none;">SIGN-UP</a>
+                <a href="login" style="text-decoration:none;">LOGIN</a>
             </li>
         </ul>
     </nav>
 </body>
-<<div class="signupim">
+<div class="signupim">
     <img src="static/img/big.png" alt="" style="width: 30%;">
-    <h1 style="font-size: 50px;  font-family: 'Ubuntu', sans-serif; color: #808080; text-align: center;
-    margin-top: 6%; margin-left: 60%;">LOGIN</h1>
-  </div>
-    <div class="form-group" style="margin-left:20%; margin-right: 20%;   ">
-        <label for="exampleInputEmail1"></label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="E-mail"
-            style="background-color: #C4C4C4; padding: 20px ; font-size: 20px; text-align: center;">
-        <style>
-            ::-webkit-input-placeholder {
-                text-align: center;
-                font-family: 'Ubuntu', sans-serif;
-                color: #575757;
-                font-size: 25px;
-            }
+    <h1 class="loginhead">LOGIN</h1>
+</div>
+<div class="form-group" style="margin-left:20%; margin-right: 20%;   ">
+    <label for="exampleInputEmail1"></label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-MAIL"
+        style="background-color: #E3F6F5; padding: 20px ; font-size: 20px; text-align: center; border: none;">
+    <style>
 
-            :-moz-placeholder {
-                text-align: center;
-                font-family: 'Ubuntu', sans-serif;
-                color: #575757;
-                font-size: 25px;
-            }
-        </style>
-    </div>
-    <div class="form-group" style="margin-left:20%; margin-right: 20%; margin-top: 2%; ">
-        <label for="exampleInputPassword1"></label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
-            style="background-color: #C4C4C4;padding: 20px ;font-size: 20px; text-align: center;">
-    </div>
-    <button type="submit" class="btn btn-primary"
-        style="margin-left:45%; margin-right: 20%; 
-    margin-top: 2%; margin-bottom: 5%; background-color: #FFD304; color: #575757; font-family: 'Quicksand', sans-serif; border-color:#FFD304 ; padding: 20px 35px; font-size: 20px;">LOGIN</button>
+    </style>
+</div>
+<div class="form-group" style="margin-left:20%; margin-right: 20%; margin-top: 2%; ">
+    <label for="exampleInputPassword1"></label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="PASSWORD"
+        style="background-color: #E3F6F5;padding: 20px ;font-size: 20px; text-align: center; border: none;">
+</div>
+<button type="submit" class="btn btn-primary"
+    style="margin-left:45%; margin-right: 20%; 
+    margin-top: 2%; margin-bottom: 5%; background-color: #2C698D; color: #E3F6F5; font-family: 'Advent Pro', sans-serif; border-color:#2C698D ; padding: 15px 40px; font-size: 20px;">LOGIN</button>
+    
 </form>
-<footer class="page-footer font-small blue">
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3" style="background-color: #C4C4C4; color: #575757;">Made with <i
-            class="fas fa-heart" style="color: red;"></i> <br>© 2021 Copyright:
-        <a href="https://anuragdev.netlify.app/" style="color:#575757 ;"> Anurag</a>
-    </div>
-    <!-- Copyright -->
-
-</footer>
-
 </html>
