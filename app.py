@@ -17,6 +17,18 @@ def login():
 @app.route('/dashboard')
 def dashboard():
     return render_template("dashboard.html")
+    
+@app.route('/meditation')
+def meditation():
+    return render_template("meditation.html")
+
+@app.route('/music')
+def music():
+    return render_template("music.html")
+
+@app.route('/write')
+def write():
+    return render_template("write.html")
 
 
 if __name__ == '__main__':

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/static/style.css">
     <title>Mindly</title>
     <style>
-         body,
+        body,
         html {
             padding: 0px;
             margin: 0px;
@@ -74,28 +74,191 @@
             /* font-weight: 1000; */
 
         }
-        .heading1{
+
+        .heading1 {
             text-align: center;
             font-size: 50px;
             margin-top: 5%;
             font-family: 'Alegreya Sans SC', sans-serif;
             color: #2C698D;
         }
+
+        .cards {
+            display: inline-flex;
+        }
+        .card{
+            margin-top: 10%;
+            margin-left: 2%;
+        }
+        :root {
+    --clr-neutral-900: hsl(207, 19%, 9%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-accent-400: hsl(142, 90%, 61%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+
+body {
+    display: grid;
+    min-height: 200vh;
+    place-items: center;
+    line-height: 1.6;
+    background-color: #ffffff;
+    font-family: sans-serif;
+}
+
+.card {
+    color: var(--clr-neutral-100);
+    background-image: url(static/img/peace1.jpg);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+
+
+}
+
+.card:hover,
+.card:focus-within {
+        
+    transform: rotateY(180deg);
+}
+
+.card-content {
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(hsl(0 0% 0% / 0),
+            hsl(0 0% 0% /0.3) 10%,
+            hsl(0 0% 0% / 1));
+    
+}
+
+.card-title {
+    position: relative;
+    width: max-content;
+
+}
+
+.card-title::after {
+    content: "";
+    left: calc(var(--padding)* -1);
+    position: absolute;
+    height: 4px;
+   
+    bottom: -2px;
+    width: calc(100% + var(--padding));
+    background: var(--clr-accent-400);
+    transition: transform 500ms ease;
+    transform-origin:left;
+
+}
+.card:hover .card-title::after,.card:focus-within .card-title::after{
+    transform:scaleX(1);
+}
+
+.card-body {
+    color: rgb(255 255 255 / 0.8);
+}
+
+.button {
+    cursor: pointer;
+    display: inline;
+    text-decoration: none;
+    color: var(--clr-neutral-900);
+    background-color: var(--clr-accent-400);
+    padding: 0.5em 1.25em;
+    transition: 0.4s ease-in-out;
+    border-radius: 0.25em;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--clr-neutral-100);
+}
+
+
+@media (hover){
+    .card-content{
+        transform:translateY(65%);
+        transition: transform 500ms ease;
+       
+    }
+    .card:hover .card-content, .card:focus-within .card-content {
+        transform:  rotateY(180deg) ;
+        transition-delay:500ms;
+    
+    }
+    .card:focus-within .card-content{
+        transition-duration: 0ms;
+    }
+    .card-content > *:not(.card-title) {
+        opacity:0;
+        transition : opacity 500ms linear;
+    }
+    .card:hover .card-content > *:not(.card-title),.card:focus-within .card-content > *:not(.card-title){
+        opacity:1;
+        transition-delay:1000ms;
+    }
+    .card-title:after{
+        transform: scaleX(0);
+    }
+}
+
     </style>
-    <body>
-        <div class="logo"><a href="/"><img src="static/img/MINDLYlogo1.png" alt=""></a></div>
-        <nav>
-            <ul>
-    
-                <li>
-    
-                </li>
-                <li class="leftnav">
-                    <a href="dashboard" style="text-decoration:none;">DASHBOARD</a>
-                </li>
-            </ul>
-        </nav>
-    </body>
-    <div class="heading1">
-        Welcome {{username}}
+
+<body>
+    <div class="logo"><a href="/"><img src="static/img/MINDLYlogo1.png" alt=""></a></div>
+    <nav>
+        <ul>
+
+            <li>
+
+            </li>
+            <li class="leftnav">
+                <a href="dashboard" style="text-decoration:none;">DASHBOARD</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+<div class="heading1">
+    Welcome {{username}}
+</div>
+
+
+<div class="card">
+    <div class="card-content">
+    <h2 class="card-title">Music</h2>
+     <p class="card-body"> When you stressed out with 9 to 5 job or with your college, <br> Mindly would suggest you with most calm music to relax and have a great sleep.</p>  
+     <a href="music" class="button">Take Me There</a>
     </div>
+    
+</div>
+<div class="card">
+    <div class="card-content">
+    <h2 class="card-title">Journaling</h2>
+     <p class="card-body">Are you stressed , you can write down your thoughts,your exprience <br> and can jot down your anger on the notebook.</p>  
+     <a href="write" class="button">Take Me There</a>
+    </div>
+    
+</div>
+<div class="card">
+    <div class="card-content">
+    <h2 class="card-title">Meditation</h2>
+     <p class="card-body"> Mindly provides you with Meditation sessions to calm your mind..</p>  
+     <a href="meditation" class="button">Take Me There</a>
+    </div>
+
+    
+    
+</div>
+<br>
+    <br>
+    <br>
+</div>

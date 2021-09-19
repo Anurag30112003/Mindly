@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400&family=Kanit:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Mindly</title>
+    <style>
+        body,
+        html {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #BAE8E8;
+            overflow: hidden;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0 0 0 150px;
+            list-style: none;
+        }
+
+        li {
+            float: right;
+
+
+
+
+        }
+
+        li :hover {
+            background-color: #2C698D;
+            color: #e3f6f5;
+        }
+
+        .logo img {
+            position: absolute;
+            margin-top: 0px;
+            margin-left: 5px;
+            margin-right: 10px;
+            height: 100px;
+        }
+
+        .first {
+            margin-left: 250px;
+        }
+
+        nav a {
+
+            width: 200px;
+            display: inline-block;
+            padding: 25px 10px;
+            text-decoration: none;
+            color: #2C698D;
+            text-align: center;
+            font-family: 'Advent Pro', sans-serif;
+            font-size: 23px;
+            transition: color 1s;
+            transition: background-color 1s;
+            /* font-weight: 1000; */
+
+        }
+
+        .heading1 {
+            text-align: center;
+            font-size: 50px;
+            margin-top: 5%;
+            font-family: 'Alegreya Sans SC', sans-serif;
+            color: #2C698D;
+        }
+
+        .cards {
+            display: inline-flex;
+        }
+
+        .card {
+            margin-top: 10%;
+            margin-left: 2%;
+        }
+
+        p {
+            text-align: center;
+            font-size: 60px;
+        }
+        button {
+  background: white;
+  border-radius: 5px;
+  border: none;
+  padding: 15px 30px;
+  font-size: 24px;
+  font-family: 'Muli';
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  line-height: 1;
+  display: flex;
+}
+
+button:hover {
+  background: #eee;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.countdown {
+  line-height: 1;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-left: 6px;
+  width: 33px;
+  height: 24px;
+}
+
+.numbers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  transition: 0.3s ease transform;
+  text-indent: 0;
+}
+
+.reset {
+  font-size: 12px;
+  padding: 8px 16px;
+  margin: 100px auto 0;
+}
+
+    </style>
+
+<body>
+    <div class="logo"><a href="/"><img src="static/img/MINDLYlogo1.png" alt=""></a></div>
+    <nav>
+        <ul>
+
+            <li>
+
+            </li>
+            <li class="leftnav">
+                <a href="dashboard" style="text-decoration:none;">DASHBOARD</a>
+            </li>
+        </ul>
+    </nav>
+ 
+    <div class="heading1">
+        Meditation Timer
+        <div class="mid" style="font-size: 20px; color: #000000;">Take Deep Breath Until timer reaches zero.  </div>
+    </div>
+    <div style="margin-left: 35%; margin-top:5%">
+        <button class="next">
+          <span class="icon">👉</span>
+          Timer
+          <span class="countdown">
+            <span class="numbers">
+              <span>60</span>
+              <span>59</span>
+              <span>58</span>
+              <span>57</span>
+              <span>56</span>
+              <span>55</span>
+              <span>54</span>
+                <span>53</span>
+                <span>52</span>
+                <span>51</span>
+                <span>50</span>
+                <span>49</span>
+                <span>48</span>
+                <span>47</span>
+                <span>46</span>
+                <span>45</span>
+                <span>44</span>
+                <span>43</span>
+                <span>42</span>
+              <span>41</span>
+              <span>40</span>
+              <span>39</span>
+              <span>38</span>
+              <span>37</span>
+              <span>36</span>
+              <span>35</span>
+              <span>34</span>
+              <span>33</span>
+              <span>32</span>
+                <span>31</span>
+              <span>30</span>
+              <span>29</span>
+              <span>28</span>
+              <span>27</span>
+              <span>26</span>
+              <span>25</span>
+              <span>24</span>
+              <span>23</span>
+              <span>22</span>
+              <span>21</span>
+                <span>20</span>
+                <span>19</span>
+                <span>18</span>
+                <span>17</span>
+                <span>16</span>
+                <span>15</span>
+                <span>14</span>
+                <span>13</span>
+                <span>12</span>
+                <span>11</span>
+              <span>10</span>
+              <span>9</span>
+              <span>8</span>
+              <span>7</span>
+              <span>6</span>
+              <span>5</span>
+              <span>4</span>
+              <span>3</span>
+              <span>2</span>
+              <span>1</span>
+              <span>0</span>
+              
+            </span>
+          </span>
+        </button>
+        
+        <button class="reset" style="background-color: #2C698D; color: #ffffff;margin-left: 20%;font-size: 25px;">Reset</button>
+      </div>
+      <script>
+          const countdownArea = document.querySelector('.countdown');
+const numbersArea = document.querySelector('.numbers');
+const resetBtn = document.querySelector('.reset');
+let interval;
+let count = 0;
+const height = countdownArea.getBoundingClientRect().height;
+
+// start the timer when page loads
+createTimer();
+
+// recreate the timer when reset is clicked
+resetBtn.addEventListener('click', createTimer);
+
+// create the interval that creates the timer
+function createTimer() {
+  clearInterval(interval);
+  count = 0;
+  numbersArea.style.transform = 'translateY(0)'
+  
+  interval = setInterval(() => {
+    count++;
+    
+    // calculate the offset and apply it
+    const offset = height * count;
+    numbersArea.style.transform = `translateY(-${offset}px)`
+
+    // what happens when countdown is done
+    if (count >= 60) {
+      // go to the next episode
+      clearInterval(interval);
+    }
+  }, 1000);
+}
+
+      </script>
+</body>
+</head>
+
+</html>

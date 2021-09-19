@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400&family=Kanit:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Mindly</title>
+    <style>
+        body,
+        html {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #BAE8E8;
+            overflow: hidden;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0 0 0 150px;
+            list-style: none;
+        }
+
+        li {
+            float: right;
+
+
+
+
+        }
+
+        li :hover {
+            background-color: #2C698D;
+            color: #e3f6f5;
+        }
+
+        .logo img {
+            position: absolute;
+            margin-top: 0px;
+            margin-left: 5px;
+            margin-right: 10px;
+            height: 100px;
+        }
+
+        .first {
+            margin-left: 250px;
+        }
+
+        nav a {
+
+            width: 200px;
+            display: inline-block;
+            padding: 25px 10px;
+            text-decoration: none;
+            color: #2C698D;
+            text-align: center;
+            font-family: 'Advent Pro', sans-serif;
+            font-size: 23px;
+            transition: color 1s;
+            transition: background-color 1s;
+            /* font-weight: 1000; */
+
+        }
+
+        .heading1 {
+            text-align: center;
+            font-size: 50px;
+            margin-top: 5%;
+            font-family: 'Alegreya Sans SC', sans-serif;
+            color: #2C698D;
+        }
+
+        .cards {
+            display: inline-flex;
+        }
+
+        .card {
+            margin-top: 10%;
+            margin-left: 2%;
+        }
+
+        p {
+            text-align: center;
+            font-size: 60px;
+        }
+        button {
+  background: white;
+  border-radius: 5px;
+  border: none;
+  padding: 15px 30px;
+  font-size: 24px;
+  font-family: 'Muli';
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  line-height: 1;
+  display: flex;
+}
+
+button:hover {
+  background: #eee;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.countdown {
+  line-height: 1;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-left: 6px;
+  width: 33px;
+  height: 24px;
+}
+
+.numbers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  transition: 0.3s ease transform;
+  text-indent: 0;
+}
+
+.reset {
+  font-size: 12px;
+  padding: 8px 16px;
+  margin: 100px auto 0;
+}
+.video{
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+    </style>
+
+<body>
+    <div class="logo"><a href="/"><img src="static/img/MINDLYlogo1.png" alt=""></a></div>
+    <nav>
+        <ul>
+
+            <li>
+
+            </li>
+            <li class="leftnav">
+                <a href="dashboard" style="text-decoration:none;">DASHBOARD</a>
+            </li>
+        </ul>
+    </nav>
+ 
+    <div class="heading1">
+        Stress Relieving Music
+        <div class="mid" style="font-size: 20px; color: #000000;">Help you to calm down.</div>
+    </div>
+
+<div class="music1">
+    <iframe class="video" width="960" height="550" src="https://www.youtube.com/embed/lFcSrYw-ARY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+    <iframe  class="video" width="960" height="550" src="https://www.youtube.com/embed/lCOF9LN_Zxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+
+    <iframe class="video" width="960" height="550" src="https://www.youtube.com/embed/lTRiuFIWV54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+    </body>
+    </head>
+    </html>
